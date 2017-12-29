@@ -1,0 +1,25 @@
+{
+    "name": "baijunyao/laravel-gitee",
+    "description": "gitee",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "baijunyao",
+            "email": "baijunyao@baijunyao.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Baijunyao\\LaravelGitee\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Baijunyao\\LaravelGitee\\GiteeServiceProvider"
+            ]
+        }
+    }
+}
