@@ -15,7 +15,7 @@ class GiteeController extends Controller
     public function pull(Request $request)
     {
         $data = $request->all();
-        if ($data['password'] === env('OSCHINA_HOOK_PASSWORD') && 'merged' === $data['state']) {
+        if ($data['password'] === env('GITEE_HOOK_PASSWORD') && 'merged' === $data['state']) {
             $basePath = base_path();
             // 回滚
             $reset = <<<EOF
